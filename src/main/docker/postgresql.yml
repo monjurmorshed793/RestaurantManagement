@@ -1,0 +1,11 @@
+version: '2'
+services:
+    restaurantmanagement-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/RestaurantManagement/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=RestaurantManagement
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
